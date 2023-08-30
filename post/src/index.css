@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 div.post{
 display: flex;
 justify-content: center;
@@ -5,8 +6,43 @@ justify-content: center;
 height: auto;
 }
 div.Post-2{
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  font-family: 'Nunito', sans-serif;
+  box-shadow: #0000004d 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   width: 500px;
   padding: 1rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+}
+div.Post-2 >.post-head{
+  display: flex;
+  gap: 0.7rem;
+}
+div.Post-2 >.post-head > img{
+  border-radius: 50%;
+}
+div.Post-2 h1{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+div.Post-2 > .date{
+  color: #BABABC;
+  /* margin-top: 1rem; */
+}
+div.postFooter{
+  display: flex;
+  justify-content:space-around;
+}
+div.postFooter> .button{
+  text-align: center;
+  width: 150px;
+  border-radius: 5px;
+  padding: 0.3rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+div.postFooter> .button:hover{
+  background-color: #f2f2f2;
+
 }
