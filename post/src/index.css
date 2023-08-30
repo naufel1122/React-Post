@@ -1,48 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
-div.post{
-display: flex;
-justify-content: center;
-/* align-items: center; */
-height: auto;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+body{
+  background-color: #f0f2f5;
 }
-div.Post-2{
-  font-family: 'Nunito', sans-serif;
+div.post {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: auto;
+}
+div.Post-2 {
+  font-family: "Nunito", sans-serif;
   box-shadow: #0000004d 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  width: 500px;
+  width: 648px;
   padding: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  background-color: #ffff;
 }
-div.Post-2 >.post-head{
+div.Post-2 > img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+div.Post-2 > .post-head {
   display: flex;
   gap: 0.7rem;
 }
-div.Post-2 >.post-head > img{
+div.Post-2 > .post-head > img {
   border-radius: 50%;
 }
-div.Post-2 h1{
+div.Post-2 h1 {
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
   margin-top: 0;
 }
-div.Post-2 > .date{
-  color: #BABABC;
+div.Post-2 > .date {
+  color: #bababc;
   /* margin-top: 1rem; */
 }
-div.postFooter{
-  display: flex;
-  justify-content:space-around;
+.hr {
+  opacity: 0.5;
 }
-div.postFooter> .button{
+div.postFooter {
+  display: flex;
+  justify-content: space-around;
+}
+div.postFooter > .button {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  width: 150px;
+  width: 200px;
   border-radius: 5px;
-  padding: 0.3rem 1rem;
+  padding: 0.3rem 0.5rem;
   margin: 0 0.5rem;
   cursor: pointer;
-  transition: all ease 0.3s;
+  transition: all ease 0.1s;
+  gap:10px;
 }
-div.postFooter> .button:hover{
+div.postFooter > .button:hover {
   background-color: #f2f2f2;
-
+  height: 100%;
+}
+div.postFooter > .button >img{
+  margin-top: 2px;
+}
+div.comment-section {
+  display: flex;
+  gap: 10px;
+}
+div.comment-section input {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  background-color: #f0f2f5;
+  padding: 10px;
+  outline: none;
+}
+div.comment-section > img {
+  border-radius: 50%;
 }
